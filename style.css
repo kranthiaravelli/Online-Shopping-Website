@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -41,13 +42,14 @@ nav {
     padding-right: 20px;
     letter-spacing: -.1px;
     font-size: 13px;
-    color: rgba(152, 152, 152, 0.596);
+    color: rgba(38, 38, 38, 0.667);
     transition: .2s ease;
     font-family: 'Google Sans';
 }
 
 .nav_container li a:hover {
     color: black;
+    font-weight: 500;
 }
 
 .nav_container img {
@@ -279,13 +281,24 @@ nav {
     transition: .2s ease;
 }
 
+.product_card a{
+    width: 100%;
+}
+
 .extra {
     display: none;
     margin-top: 10px;
+    transition: .2s ease;
 }
 
 .product_card.active .extra {
-  display: block;
+    display: block;
+}
+
+.display-box {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-left: 40px;
 }
 
 .product_card img {
@@ -406,6 +419,7 @@ footer {
 }
 
 .construction {
+    display: none;
     width: 100%;
     text-align: center;
     font-size: 12px;
@@ -716,5 +730,8 @@ input {
     .nav {
         display: flex;
         justify-content: space-between;
+    }
+    .construction {
+        display: block;
     }
 }
